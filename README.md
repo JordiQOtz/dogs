@@ -1,7 +1,7 @@
-## Lomitos Felices
+# Lomitos Felices
 
 Página web para adopción de perros en situación de calle o abandono.
 
-# Creador
+## Creador
 
 Jordi Quiroz Ortiz
