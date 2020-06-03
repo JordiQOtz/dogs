@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrarse</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Registrarse como:</h1>
+    <form action="">
+        <div>
+            <input type="radio" id="Tipo" name="Tipo" value="Cliente" checked>Cliente
+            <input type="radio" id="Tipo" name="Tipo" value="Refugio" >Refugio
+
+            <button type="button" onclick="verificar()" id="boton">Continuar</button>
+        </div>
+        <script>
+            function verificar()
+            {
+                var tipo = document.getElementsByName("Tipo");
+                for(var i =0;i<tipo.length;i++)
+                {
+                    if(tipo[i].checked)
+                    {
+                        var res = tipo[i].value;
+                    }
+                }
+                if(res == "Cliente")
+                {
+                    window.location="FormularioCliente.html";
+                }
+                else if(res == "Refugio")
+                {
+                    window.location="FormularioRefugio.html";
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

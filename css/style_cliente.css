@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Comfortaa,'Segoe UI', Verdana, sans-serif;
+}
+body{
+  margin-top: 68px;
+  min-width: 720px;
+  background-color: #DBE2EC;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  max-width: 1700px;
+}
+                    /* Header */
+header{
+  width: 100%;
+  height: 65px;
+  background-color: rgb(111, 161, 189);
+  border-bottom: #005481 3px solid;
+  min-width: 720px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+header img{
+  height: 55px;
+  padding: 5px 15px 5px 15px;
+  float: left;
+}
+.logo_header_admin{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btns{
+  top: 0;
+  float: right;
+  height: 80px;
+}
+.btn, .btn_perfil{
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-size: 16px;
+}.btn{
+  height: 65px;
+  border: none;
+  margin: 0 -2px 0 -2px;
+  padding: 0 12px 0 12px;
+}.btn:hover{
+  background-color: rgba(255,255,255,0.15);
+  transition: 0.43s;
+}
+.btn_perfil{
+  margin: 0 15px 0 15px;
+  width: 90px;
+  height: 33px;
+  border: 1px solid white;
+  padding: 0 8px 0 8px;
+  position: relative;
+}
+.btn_perfil::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.43s;
+  top: 0;
+  border-radius: 0 0 200% 200%;
+}
+.btn_perfil:hover::before{
+  height: 100%;
+  border-radius: 0;
+}
+a.linkEstatus{
+    color: white;
+}
+.sesion_background_admin{
+  width: 100%;
+  min-height: 540px;
+  background:url('../img/admin_background.jpg') center;
+  background-size: cover;
+}
+                    /* Boxes */
+#boxes{
+  width: 80%;
+  margin: 40px auto 40px auto;
+  overflow: hidden;
+}
+div#container_boxes>h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #6fa1bd;
+  font-size: 30px;
+  text-align: center;
+}
+#container_boxes{
+  overflow: hidden;
+  text-align: center;
+}
+#boxes .box{
+  width: 80%;
+  min-width: 170px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: #6fa1bd;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: 14px auto 24px auto;
+}
+a{
+    text-decoration: none;
+    color: #005481;
+}
+#container_boxes span{
+    margin-top: 100px;
+}
+#boxes .box:hover{
+  transition: 0.43s;
+  background-color: #6fa1bd;
+  color: #ffffff;
+}
+#boxes .contenedor{
+    display: flex;
+    padding: 15px;
+}
+#boxes .divimage{
+    width: 50%;
+    height: auto;
+    float: left;
+    display: inline-flex;
+}
+.p_estatus{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p.links{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p.links a{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.PrincipalRefugio{
+    font-size: 15px;
+    color: #6fa1bd;
+}
+.container table{
+    width: 100%;
+    word-wrap: normal;
+}
+#tableData,#tableDataCita{
+    width: 85%;
+    overflow-x: auto;
+}
+#tableDataCita{
+    border: 3px solid rgba(255,255,255,0.5);
+}
+#tableDataCita .datosTabla:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+#tableDataCita tr:nth-child(1){
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+#tableData tr:nth-child(1){
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.container table tr{
+    height: 20px;
+}
+.container table th{
+    font-size: 120%;
+}
+.container table *{
+    padding: 5px 5px 5px 5px;
+}
+.container table{
+    border-collapse: collapse;
+}
+table .mensajeError{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.datosTabla:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+#boxes .divinfo{
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+.divinfo h2{
+    margin: 5px auto 5px auto;
+}
+#boxes .divenlace{
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px auto 10px auto;
+}
+.divenlace a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#boxes h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.imgperro{
+    border-radius: 50px 50px;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+.sesion_background_admin .container{
+    background-color: rgba(0,0,0,0.5);
+}
+                    /* Footer */
+footer{
+  padding: 15px;
+  color: #6fa1bd;
+  background-color: #005481;
+  text-align: center;
+}

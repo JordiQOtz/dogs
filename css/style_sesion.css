@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Comfortaa,'Segoe UI', Verdana, sans-serif;
+}
+body{
+  margin-top: 68px;
+  min-width: 720px;
+  background-color: #DBE2EC;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  max-width: 1700px;
+}
+                    /* Header */
+header{
+  width: 100%;
+  height: 65px;
+  background-color: rgb(111, 161, 189);
+  border-bottom: #005481 3px solid;
+  min-width: 720px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+header img{
+  height: 55px;
+  padding: 5px 15px 5px 15px;
+  float: left;
+}
+.logo_header_admin{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btns{
+  top: 0;
+  float: right;
+  height: 65px;
+}
+.btn, .btn_perfil{
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-size: 16px;
+}
+.btn{
+  height: 65px;
+  border: none;
+  margin: 0 -2px 0 -2px;
+  padding: 0 12px 0 12px;
+}
+.btn:hover{
+  background-color: rgba(255,255,255,0.15);
+  transition: 0.43s;
+}
+.btn_perfil{
+  margin: 0 15px 0 15px;
+  width: 90px;
+  height: 33px;
+  border: 1px solid white;
+  padding: 0 8px 0 8px;
+  position: relative;
+}
+.btn_perfil::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.43s;
+  top: 0;
+  border-radius: 0 0 200% 200%;
+}
+.btn_perfil:hover::before{
+  height: 100%;
+  border-radius: 0;
+}
+
+                    /* Inicio de Sesión*/
+#sesion_box{
+  padding-top: 50px;
+  margin: auto;
+  overflow: hidden;
+  width: 480px;
+  text-align: center;
+}
+#sesion_box .box{
+  margin-top: -50px;
+  padding: 50px 50px 30px 50px;
+  background: rgba(0, 0, 0, 0.564);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 50px;
+}
+.sesion_background{
+  width: 100%;
+  min-height: 540px;
+  background:url('../img/797169.jpg') center;
+  background-size: cover;
+}
+.sesion_background_admin{
+  width: 100%;
+  min-height: 540px;
+  background:url('../img/admin_background.jpg') center;
+  background-size: cover;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(111, 161, 189,1);
+}
+.box h1{
+  color: #6fa1bd;
+  padding: 10px;
+}
+.box p{
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+.etiquetacliente{
+    font-size:17px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+    margin: 15px auto 15px 15px;
+}
+.box input[type="radio"]{
+    cursor: pointer;
+    margin: 15px 15px 15px auto;
+}
+.box input[type="email"],.box input[type="password"],.box input[type="text"]{
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 25px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.box a{
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  margin: 7px auto 7px auto;
+}
+.box a:visited{
+  color: #ffffff;
+}
+a#mostrarRegistro{
+    cursor: pointer;
+}
+.boxRegistro{
+    display: none;
+    transition: 2s;
+}
+.box a:hover{
+  color: #6fa1bd;
+}
+.box input[type="submit"]{
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #6fa1bd;
+  cursor: pointer;
+  border-radius: 20px;  
+  margin-bottom: 10px;
+  width: 100%;
+}
+.box input[type="submit"]:hover{
+  background: #005481;
+  color: #000000;
+}
+
+                    /* Footer */
+footer{
+  padding: 15px;
+  color: #6fa1bd;
+  background-color: #005481;
+  text-align: center;
+}

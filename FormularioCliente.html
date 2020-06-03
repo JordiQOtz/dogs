@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Lomitos Felices</title>
+    <meta charset="utf-8">
+    <script src="ValidarFormulario.js"></script>
+    <link rel="stylesheet" href="css/style_registro.css">
+</head>
+<body>
+<header>
+    <img src="img/logo_lf_transparent3.png" alt="logo" class="logo_header" id="logo_header">
+    <nav class="btns">
+      <button onclick="location.href='./inicio.html'" class="btn">¿Quiénes Somos?</button>
+      <!--<button onclick="location.href='./conocelos.html'" class="btn">¡Conócelos!</button>-->
+      <button onclick="location.href='./informate.html'" class="btn">Infórmate</button>
+      <button onclick="location.href='./contacto.html'" class="btn">Contacto</button>
+      <button onclick="location.href='./IniciarSesion.html'" class="btn_perfil">Cuenta</button>
+    </nav>
+</header>
+
+   
+    <div class="background_form">
+    <form action="RegistroCliente.php" method="POST" class="formRegistrarCliente" id="registro_nuevo" onsubmit="return ValidarCliente()">
+        <div class="container">
+            <h1>Formulario del cliente</h1>
+            <fieldset>
+            <p>Nombre</p>
+            <input type="text" id="Nombre" name="Nombre" required class="field">
+            <p>Apellidos</p>
+            <input type="text" id="Apellidos" name="Apellidos" required class="field">
+            <p>Fecha de nacimiento</p>
+            <input type="date" id="FechaDeNacimiento" name="FechaDeNacimiento" placeholder="dd/mm/aaaa" class="field">
+            <p>País</p>
+            <select id="Pais" name="Pais" required class="field">
+                <option value="Vacio" selected>Seleccione un país</option>
+                <option value="México">México</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <p>Estado</p>
+            <select id="Estado" name="Estado" required class="field">
+                <option value="Vacio" selected>Seleccione un estado</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Ciudad de México">Ciudad de México</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Durango">Durango</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="México">México</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select>
+            <p>Dirección</p>
+            <input type="message" id="Dirección" name="Dirección" required class="field">
+            <p>Correo electronico</p>
+            <input type="email" id="Correo" name="Correo" placeholder="mail@domain.com" pattern="[a-z,0-9]+@[a-z,0-9]+.[a-z]+" required class="field">
+            <p>Contraseña</p>
+            <input type="password" id="Contraseña" name="Contraseña" required class="field">
+            <p>Telefono</p>
+            <input type="tel" id="Telefono" name="Telefono" placeholder="00-0000-0000" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required class="field">
+            <input type="submit" value="Registrar" id="submit_registro">
+        </fieldset>
+        </div>
+    </form>
+    </div>
+    <footer>
+    <div class="container">
+      <p>Lomitos Felices, Copyright &copy; 2019.</p>
+    </div>
+  </footer>
+</body>
+</html>

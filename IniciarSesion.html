@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lomitos Felices</title>
+  <link rel="stylesheet" href="css/style_sesion.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo_lf_transparent3.png" alt="logo" class="logo_header" id="logo_header">
+    <nav class="btns">
+      <button onclick="location.href='./inicio.html'" class="btn">¿Quiénes Somos?</button>
+      <!--<button onclick="location.href='./conocelos.html'" class="btn">¡Conócelos!</button>-->
+      <button onclick="location.href='./informate.html'" class="btn">Infórmate</button>
+      <button onclick="location.href='./contacto.html'" class="btn">Contacto</button>
+      <button onclick="location.href='./IniciarSesion.html'" class="btn_perfil">Cuenta</button>
+    </nav>
+  </header>
+  <div class="sesion_background">
+    <section id="sesion_box">
+        <img src="img/avatar.png" class="avatar">
+        <div class="box">
+          <h1>Iniciar Sesión</h1>
+          <form action="IniciarSesion.php" method="POST" class="formIniciarSesion" onsubmit="return ValidarInicioSesion()">
+            <p>Correo</p>
+            <input type="email" id="Cuenta" name="Cuenta" placeholder="Ingresa tu correo" required>
+            <p>Contraseña</p>
+            <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa tu contraseña" required>
+            <label for="radioCliente" class="etiquetacliente">Cliente</label>
+            <input type="radio" name="Tipo" id="radioCliente" value="Cliente" checked>
+            <label for="radioRefugio" class="etiquetacliente">Refugio</label>
+            <input type="radio" name="Tipo" id="radioRefugio" value="Refugio">
+            <input type="submit" value="Iniciar Sesión">
+          </form>
+        <!--<a href="#">*¿Olvidaste tu contraseña?</a>-->
+        <a id="mostrarRegistro" onclick="myFunction()">*¿Aún no tienes una cuenta? Regístrate aquí.</a>
+        <div class="boxRegistro" id="dos">
+            <h1>Registrarse como:</h1>
+            <button onclick="location.href='./FormularioCliente.html'" class="btn">Cliente</button>
+            <button onclick="location.href='./FormularioRefugio.html'" class="btn">Refugio</button>
+        </div>
+        </div>
+      </section>
+  </div>
+  <footer>
+    <div class="container">
+      <p>Lomitos Felices, Copyright &copy; 2019.</p>
+    </div>
+  </footer>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("dos");
+            if(x.style.display === "none")
+                x.style.display = "block";
+            else
+                x.style.display = "none";
+        }
+    </script>
+</body>
+</html>

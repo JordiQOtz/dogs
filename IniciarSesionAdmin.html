@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lomitos Felices - Administrador</title>
+  <link rel="stylesheet" href="css/style_sesion.css">
+</head>
+<body>
+  <header>
+      <p class="logo_header_admin"><img src="img/logo_lf_transparent3.png" alt="logo" class="logo_header_admin" id="logo_header"></p>
+  </header>
+  <div class="sesion_background_admin">
+    <section id="sesion_box">
+        <img src="img/avatar.png" class="avatar">
+        <div class="box">
+          <h1>Administrador</h1>
+          <form action="IniciarSesionAdmin.php" method="POST" class="formIniciarSesionAdmin" onsubmit="return IniciarSesionAdmin()">
+              <div>
+                  <p>Usuario</p>
+                  <input type="text" id="Cuenta" name="Cuenta" placeholder="Ingresa tu usuario" required>
+                  <p>Contraseña</p>
+                  <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa tu contraseña" required>
+                  <input type="submit" value="Iniciar sesión">
+              </div>
+          </form>
+        </div>
+      </section>
+  </div>
+  <footer>
+    <div class="container">
+      <p>Lomitos Felices, Copyright &copy; 2019.</p>
+    </div>
+  </footer>
+</body>
+</html>
